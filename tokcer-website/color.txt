@@ -1,0 +1,8 @@
+// Blue
+#4A71BF
+
+// Green
+#3FB99F
+
+// White
+#FFFFFF

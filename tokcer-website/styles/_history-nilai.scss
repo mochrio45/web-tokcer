@@ -1,0 +1,107 @@
+.container-box {
+  .section-heading {
+    @include flex();
+    align-items: center;
+    gap: 5px;
+    padding: 30px 0;
+    background-color: $greenColor;
+    color: $whiteColor;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .clipboard-icon {
+      width: 22px;
+    }
+
+    .third-heading {
+      font-size: 24px;
+    }
+  }
+
+  .section-table-nilai {
+    @include flex();
+
+    table {
+      width: 700px;
+
+      tr {
+        height: 50px;
+        text-align: center;
+
+        th {
+          color: $greenColor;
+        }
+
+        td {
+          font-size: 14px;
+        }
+      }
+
+      tr:nth-child(even) {
+        background-color: $lightGreyColor;
+      }
+    }
+  }
+
+  .section-button {
+    .btn-pages {
+      @include flex();
+      align-items: center;
+      gap: 5px;
+
+      .btn-page {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+      }
+
+      .actived {
+        background-color: $greenColor;
+        color: $whiteColor;
+      }
+    }
+  }
+
+  .wrap-nilai {
+    padding: 50px 0;
+    @include flex();
+
+    .sub-wrap-nilai {
+      width: 470px;
+      font-size: 14px;
+
+      .text-nilai {
+        width: 50px;
+        height: 25px;
+        @include flex();
+        align-items: center;
+        color: $blackColor;
+        background-color: rgba(64, 186, 160, 0.2);
+        border: 1px solid rgba(63, 185, 159, 0.4);
+        border-radius: 30px;
+        font-weight: 400;
+      }
+
+      .wrap-first {
+        @include flex();
+        justify-content: space-between;
+
+        .text-nt {
+          font-weight: 700;
+        }
+      }
+
+      .wrap-second {
+        margin-top: 50px;
+        @include flex();
+        justify-content: space-between;
+
+        .text-tp {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+// === LOGIN PAGE ===
+// --- HEADER ---
+.header-login-section {
+  padding-top: 25px;
+  padding: 25px 0;
+}
+
+.nav-main-menu {
+  width: 1100px;
+  margin: 0 auto;
+  @include flex();
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .logo-okezone {
+    width: 200px;
+  }
+
+  .logo-tokcer {
+    width: 120px;
+  }
+
+  .btn-masuk {
+    @include flex();
+    align-items: center;
+    gap: 5px;
+    height: 37.28px;
+    background-color: transparent;
+    border: 1.3px solid $whiteColor;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    color: $whiteColor;
+    padding-left: 8px;
+    padding-right: 14px;
+
+    .user {
+      width: 25px;
+    }
+  }
+}
+
+// --- MAIN SECTION ---
+.main-section {
+  padding-top: 72px;
+}
+
+.wraper-main-section {
+  width: 1100px;
+  margin: 0 auto;
+  @include flex();
+}
+
+.wrap-desc {
+  .first-heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: $whiteColor;
+  }
+
+  .text-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: $whiteColor;
+    margin-top: 15px;
+  }
+
+  .wrap-mulai-share {
+    @include flex();
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: $whiteColor;
+    margin-top: 45px;
+
+    .btn-mulai {
+      width: 150px;
+      height: 30px;
+      background-color: $greenColor;
+      border: none;
+      color: inherit;
+      border-radius: 9px;
+      font-size: 12px;
+    }
+
+    .wrap-share-fb-x {
+      @include flex();
+      align-items: center;
+      gap: 5px;
+
+      .text-share {
+        font-size: 12px;
+        font-weight: 400px;
+        margin-right: 5px;
+      }
+
+      .facebook,
+      .x {
+        width: 30px;
+      }
+    }
+  }
+}
+
+.wrap-img {
+  position: relative;
+
+  .room-relaxing-img {
+    width: 560px;
+  }
+
+  .wrap-more-trophy {
+    @include flex();
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+
+    .btn-more {
+      width: 125px;
+      height: 50px;
+      background-color: $greenColor;
+      color: $whiteColor;
+      border: 2px solid $lightGreeenColor;
+      border-radius: 9px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .trophy-img {
+      position: absolute;
+      top: -77px;
+      left: 75px;
+    }
+  }
+}
+
+// --- END SECTION ---
+.end-section {
+  margin-top: 30px;
+  padding: 25px 0;
+  background-color: $greenColor;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pattern {
+  transform: translateY(-40%);
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.text-support {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wraper-end-section {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  color: $whiteColor;
+  @include flex();
+  flex-direction: column;
+  align-items: center;
+
+  .sponsor {
+    margin: 7px 0 20px 0;
+    @include flex();
+    gap: 5px;
+
+    .white-box {
+      width: 60px;
+      height: 35px;
+      background-color: $whiteColor;
+      border-radius: 5px;
+    }
+  }
+
+  .text-copyrights {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+// === SOAL PAGE ===
+.header-question {
+  padding-top: 20px;
+}
+
+.wrap-header-question {
+  margin: 0 auto;
+  @include flex();
+
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  background-color: $greenColor;
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  .logo-okezone {
+    width: 150px;
+  }
+
+  .main-heading {
+    color: $whiteColor;
+  }
+
+  .btn-masuk {
+    width: 170px;
+    height: 45px;
+
+    @include flex();
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid $whiteColor;
+    border-radius: 30px;
+
+    img {
+      width: 15px;
+    }
+  }
+}

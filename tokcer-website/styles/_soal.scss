@@ -1,0 +1,261 @@
+// === SOAL PAGE ===
+.container {
+  background-image: url(../img/pattern-background.png);
+  background-size: cover;
+}
+
+// --- HEADER SOAL ---
+.header-soal {
+  padding: 30px 0;
+
+  .container-box-header {
+    width: 1000px;
+    margin: 0 auto;
+    @include flex();
+    justify-content: space-between;
+    align-items: center;
+    background-color: $greenColor;
+    padding: 18px 20px;
+    border-radius: 10px;
+
+    .logo-okezone {
+      width: 165px;
+    }
+
+    .second-heading {
+      color: $whiteColor;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .btn-masuk-active {
+      @include flex();
+      align-items: center;
+      gap: 5px;
+      height: 37.28px;
+      background-color: transparent;
+      color: $whiteColor;
+      border: 1px solid $whiteColor;
+      border-radius: 30px;
+      padding-left: 8px;
+      padding-right: 14px;
+      cursor: pointer;
+
+      .user {
+        width: 25px;
+      }
+
+      span {
+        font-size: 10px;
+        font-weight: 600;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.container-aside-section {
+  width: 1000px;
+  margin: 0 auto;
+  @include flex();
+  gap: 25px;
+
+  .ads-left,
+  .ads-right {
+    width: 95px;
+    height: 500px;
+    @include flex();
+    align-items: center;
+    background-color: $greyColor;
+    text-transform: uppercase;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+}
+
+// --- SECTION SOAL ---
+.container-box {
+  width: 750px;
+  background-color: $whiteColor;
+  border-radius: 10px;
+
+  // --- WAKTU ---
+  .section-waktu {
+    // border-bottom: 1.5px solid #4a4a4a26;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    @include flex();
+    justify-content: space-between;
+    align-items: center;
+
+    .waktu {
+      @include flex();
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+
+      .jam,
+      .menit {
+        font-size: 24px;
+      }
+    }
+
+    .btn-selesai {
+      color: $whiteColor;
+      background-color: $greenColor;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .btn-selesai:hover {
+      color: $greenColor;
+      background-color: $whiteColor;
+      border: 1px solid $greenColor;
+    }
+  }
+
+  .container-soal {
+    padding: 25px;
+  }
+
+  // --- SOAL ---
+  .section-soal {
+    .this-heading {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .container-num-paragraph {
+      margin-top: 45px;
+      @include flex();
+      gap: 20px;
+      line-height: 1.5;
+
+      span {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .paragraph-soal {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  // --- PILIHAN ---
+  .section-pilihan {
+    margin-top: 20px;
+    margin-left: 30px;
+
+    .pilihan {
+      margin: 15px 0;
+      @include flex();
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+      font-size: 14px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  // --- BUTTON ---
+  .section-button {
+    padding: 25px;
+    @include flex();
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-left,
+    .btn-right {
+      @include flex();
+      gap: 5px;
+      align-items: center;
+      padding: 7px 10px 7px 15px;
+      color: $greenColor;
+      background-color: transparent;
+      border: 1px solid $greenColor;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+
+      span {
+        font-size: 14px;
+      }
+
+      .chevron-left,
+      .chevron-right {
+        font-size: 18px;
+      }
+    }
+
+    .btn-left:hover,
+    .btn-right:hover {
+      color: $whiteColor;
+      background-color: $greenColor;
+      border: 1px solid $whiteColor;
+    }
+  }
+
+  // --- NUMBER SOAL ---
+  .section-number-soal {
+    width: 700px;
+    height: 175px;
+    margin: 15px auto;
+    padding: 15px 33px;
+    overflow-y: scroll;
+    border: 1px solid #0000003c;
+    border-radius: 10px;
+
+    .fourth-heading {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .container-number {
+      margin-top: 15px;
+      @include flex();
+      justify-content: flex-start;
+      flex-flow: row wrap;
+      gap: 15px;
+
+      .number {
+        width: 27px;
+        height: 27px;
+        border: 1.33px solid #000;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      .finish-num {
+        background-color: rgba(64, 186, 160, 0.2);
+        border-color: rgba(63, 185, 159, 0.4);
+      }
+
+      .current-num {
+        color: $whiteColor;
+        background-color: #002c22;
+      }
+    }
+  }
+
+  .ads-under {
+    padding: 15px 0;
+
+    .ads {
+      margin: 0 auto;
+      @include flex();
+      align-items: center;
+      width: 600px;
+      height: 90px;
+      background-color: $greyColor;
+    }
+  }
+}

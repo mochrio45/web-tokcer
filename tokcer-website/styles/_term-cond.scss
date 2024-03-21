@@ -1,0 +1,94 @@
+// --- TERM AND CONDITION ---
+.container-box {
+  .section-tabs {
+    @include flex();
+    justify-content: flex-start;
+    padding: 5px 15px;
+  }
+
+  .section-tabs {
+    .tab {
+      @include flex();
+      gap: 5px;
+
+      .btn-tab {
+        width: 125px;
+        height: 55px;
+        border: none;
+        background-color: transparent;
+      }
+
+      .active {
+        border-bottom: 2px solid $greenColor;
+      }
+    }
+  }
+
+  .section-term-cond {
+    padding: 25px;
+    font-size: 14px;
+    font-weight: 700px;
+
+    .ol-term-cond {
+      margin-top: 30px;
+      margin-left: 25px;
+
+      .li-term-cond {
+        span {
+          font-weight: 900;
+        }
+
+        margin-bottom: 5px;
+      }
+
+      .li-term-cond:last-child {
+        margin-bottom: 0;
+      }
+
+      .sub-ul-term-cond {
+        margin-left: 20px;
+        list-style-type: disc;
+
+        .sub-li-term-cond {
+          margin-bottom: 5px;
+        }
+
+        .super-sub-ul {
+          li {
+            margin-bottom: 5px;
+          }
+
+          margin-left: 5px;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  .button-section {
+    @include flex();
+    align-items: center;
+    padding: 15px 0;
+
+    .btn-mulai {
+      width: 200px;
+      height: 40px;
+      border: none;
+      background-color: $greenColor;
+      color: $whiteColor;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+.container-box {
+  .img-hadiah {
+    padding: 25px 25px 10px 25px;
+    // @include flex();
+
+    img {
+      width: 100%;
+    }
+  }
+}
